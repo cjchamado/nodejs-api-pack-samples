@@ -1,13 +1,18 @@
 const bodyParser = require("body-parser");
 const express = require("express");
-const routing = require("api-pack-express");
+// const routing = require(/*"api-pack-express"*/ "../express");
 
 /** ApiPack configuration */
 
-const apiPack = require("./src/basic/api-pack");
-const operations = require("./src/basic/operations");
+// Mocked
+// const apiPack = require("./src/mocked/api-pack");
+// const operations = require("./src/mocked/operations");
 
-const router = routing(apiPack, operations);
+// Mongoose
+// const apiPack = require("../mongoose/api-pack");
+// const operations = require("../mongoose/operations");
+
+const mongooseAndExpressApiPackRouter = require("./src/mongoose");
 
 /** Express app */
 
@@ -15,6 +20,6 @@ const app = express();
 
 app.use(bodyParser.json());
 
-app.use("/express", router);
+app.use("/express", mongooseAndExpressApiPackRouter);
 
 app.listen(3003);

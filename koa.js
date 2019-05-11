@@ -4,8 +4,8 @@ const routing = require("api-pack-koa");
 
 /** ApiPack configuration */
 
-const apiPack = require("./src/basic/api-pack");
-const operations = require("./src/basic/operations");
+const apiPack = require("./src/mocked/api-pack");
+const operations = require("./src/mocked/operations");
 
 const router = routing(apiPack, operations);
 router.prefix("/koa");
