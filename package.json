@@ -4,22 +4,24 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "api-pack-express": "git+ssh://git@github.com:cjchamado/api-pack-express.git",
-    "api-pack-koa": "git+ssh://git@github.com:cjchamado/api-pack-koa.git",
+    "@kolinalabs/api-pack-express": "^1.0.0",
+    "@kolinalabs/api-pack-koa": "^1.0.0",
+    "@kolinalabs/api-pack-mongoose": "^1.0.6",
+    "@kolinalabs/nodejs-api-pack": "^1.0.2",
     "body-parser": "^1.19.0",
+    "dotenv": "^8.0.0",
     "express": "^4.16.4",
     "koa": "^2.7.0",
     "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0",
-    "mongoose": "^5.5.6",
-    "nodejs-api-pack": "git+ssh://git@github.com:cjchamado/nodejs-api-pack.git"
+    "mongoose": "^5.5.6"
   },
   "devDependencies": {
     "supervisor": "^0.12.0"
   },
   "scripts": {
-    "start:express": "node express.js",
-    "start:koa": "node koa.js",
+    "express:mongoose": "node express-mongoose.js",
+    "koa:mongoose": "node koa-mongoose.js",
     "test": "node tests/index.js"
   }
 }
