@@ -6,8 +6,8 @@
   "dependencies": {
     "@kolinalabs/api-pack-express": "^1.0.0",
     "@kolinalabs/api-pack-koa": "^1.0.0",
-    "@kolinalabs/api-pack-mongoose": "^1.0.6",
-    "@kolinalabs/nodejs-api-pack": "^1.0.2",
+    "@kolinalabs/api-pack-mongoose": "^1.0.8",
+    "@kolinalabs/nodejs-api-pack": "^1.0.3",
     "body-parser": "^1.19.0",
     "dotenv": "^8.0.0",
     "express": "^4.16.4",
@@ -20,6 +20,7 @@
     "supervisor": "^0.12.0"
   },
   "scripts": {
+    "express:mocked": "node express-mocked.js",
     "express:mongoose": "node express-mongoose.js",
     "koa:mongoose": "node koa-mongoose.js",
     "test": "node tests/index.js"

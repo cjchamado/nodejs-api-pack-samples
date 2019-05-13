@@ -8,8 +8,13 @@ const schema = new mongoose.Schema({
 
 schema.statics.ApiPack = function() {
   return {
+    /*
+    operations: {
+      create: true
+    },
+    */
     pagination: {
-      itemsPerPage: 50
+      itemsPerPage: 3
     }
   };
 };

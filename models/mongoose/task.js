@@ -11,6 +11,7 @@ const schema = new mongoose.Schema({
 
 schema.statics.ApiPack = function() {
   return {
+    // pathPrefix: "/v1",
     filters: {
       search: {
         properties: {
@@ -19,10 +20,10 @@ schema.statics.ApiPack = function() {
       }
     },
     pagination: {
-      // enabled: false,
+      enabled: false,
       // clientEnabled: true,
       // enabledParameter: "pager",
-      itemsPerPage: 4
+      itemsPerPage: 5
       // clientItemsPerPage: true,
       // maxItemsPerPage: 6
       // itemsPerPageParameter: "ipp"

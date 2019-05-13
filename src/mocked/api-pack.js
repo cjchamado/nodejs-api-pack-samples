@@ -1,7 +1,7 @@
 /**
  * ApiPack configuration
  */
-const ApiPack = require("nodejs-api-pack");
+const { ApiPack } = require("@kolinalabs/nodejs-api-pack");
 const { checker, provider, persister, serializer, validator } = require(".");
 
 const apiPack = new ApiPack();

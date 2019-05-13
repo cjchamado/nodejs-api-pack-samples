@@ -4,27 +4,27 @@
 module.exports = [
   {
     type: "collection",
-    method: "GET",
-    path: "/"
+    method: "get",
+    path: "/dummies"
   },
   {
     type: "collection",
     method: "post",
-    path: "/"
+    path: "/dummies"
   },
   {
     type: "item",
-    method: "GET",
-    path: "/:id"
+    method: "get",
+    path: "/dummies/:id"
   },
   {
     type: "item",
     method: "put",
-    path: "/:id"
+    path: "/dummies/:id"
   },
   {
     type: "item",
     method: "delete",
-    path: "/:id"
+    path: "/dummies/:id"
   }
 ];

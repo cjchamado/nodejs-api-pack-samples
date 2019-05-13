@@ -13,8 +13,8 @@ const { ApiPack } = require("@kolinalabs/api-pack-mongoose");
 const router = require("@kolinalabs/api-pack-express");
 
 // MAPPING MODELS [Model1, Model2, ModelN, ...]
-const { Task } = require("./models/mongoose");
-const models = [Task];
+const { Project, Task } = require("./models/mongoose");
+const models = [Project, Task];
 
 // GET ROUTES
 const apiPack = new ApiPack(models);
@@ -22,8 +22,7 @@ const routes = apiPack.routing(router);
 
 // INIT APP
 const app = express();
-app.use(bodyParser);
-
+app.use(bodyParser.json());
 app.use("/api", routes);
 
 app.listen(process.env.EXPRESS_PORT);
