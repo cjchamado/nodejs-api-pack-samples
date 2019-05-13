@@ -1,30 +1,7 @@
-### Build your api base
+### Api Pack Samples
 
-#### Install `api-pack-mongoose`
+- [Mongoose + ExpressJS](https://github.com/kolinalabs/nodejs-api-pack-samples/blob/master/express-mongoose.js)
 
-```
-$ yarn add @kolinalabs/api-pack-mongoose
+- [Mongoose + KoaJS](https://github.com/kolinalabs/nodejs-api-pack-samples/blob/master/koa-mongoose.js)
 
-```
-
-#### Configure your models
-
-```
-// models/task.js
-
-const mongoose = require("mongoose");
-
-const schema = new mongoose.Schema({
-  title: String,
-  status: String,
-  priority: Number,
-  closed: Boolean,
-  openedAt: Date,
-  closedAt: Date
-});
-
-const Task = mongoose.model("Task", schema);
-
-```
-
-####
+- [Mocked Sample](https://github.com/kolinalabs/nodejs-api-pack-samples/blob/master/express-mocked.js)
