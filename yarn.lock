@@ -16,24 +16,17 @@
   dependencies:
     koa-router "^7.4.0"
 
-"@kolinalabs/api-pack-mongoose@^1.0.8":
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/@kolinalabs/api-pack-mongoose/-/api-pack-mongoose-1.0.8.tgz#41c208b6360b4896e8323dc89f855bbf5984b37d"
-  integrity sha512-e5Cep+SnMLFCgVV6mFByEs0Ioq3vEU2M7ekgHsgZ44A1zTAzn1dQ8Rnkn+mpVbc6GnsCCBM5fnJMkNoxjkLuuQ==
+"@kolinalabs/api-pack-mongoose@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@kolinalabs/api-pack-mongoose/-/api-pack-mongoose-1.1.2.tgz#d843cace2c38addafd6551f50698485dd0856d9e"
+  integrity sha512-h3WzS8/G0baAOJiRQcTQ4UdCo3WMXicit97cvdaKoVsrDZxj2E/lJNVD67v7fcihsZ04cW96ygHNIDmp211jCg==
   dependencies:
-    "@kolinalabs/nodejs-api-pack" "^1.0.2"
+    "@kolinalabs/nodejs-api-pack" "^1.0.4"
 
-"@kolinalabs/nodejs-api-pack@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@kolinalabs/nodejs-api-pack/-/nodejs-api-pack-1.0.2.tgz#2434c00ea27bfd5a49439e01cdbc64271e7e0d49"
-  integrity sha512-A+03ALymubH3IzLeMyHxlkH+LBt3JpAFOefNbpbW/f3Rxf4R+bf+y3z7imaW2E+wqJ5eb1zTqiPmy/dILm9fZg==
-  dependencies:
-    inflected "^2.0.4"
-
-"@kolinalabs/nodejs-api-pack@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@kolinalabs/nodejs-api-pack/-/nodejs-api-pack-1.0.3.tgz#36b0b646d57afd76846ab4208a8c5365d073af6a"
-  integrity sha512-am0xz59uQLWQN6eC5MHUgQNWmGPsCWCW3rRMq+hzND8kpHywPo/vOjBPhfZgyBtw99CHmTEQM5w/UgMz9ZnMVQ==
+"@kolinalabs/nodejs-api-pack@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@kolinalabs/nodejs-api-pack/-/nodejs-api-pack-1.0.4.tgz#69a559bc332bfe269012d59b57a827cd4ffa3e87"
+  integrity sha512-rMLmRsFiyNXL7LQNVRZfwKeX4+xFL56VKSqhJ7id9XQRA6tXS4yuEfUJlUH5rnIRazEWMlpv4Grgbjaw+/J1tA==
   dependencies:
     inflected "^2.0.4"
 

@@ -6,8 +6,8 @@
   "dependencies": {
     "@kolinalabs/api-pack-express": "^1.0.0",
     "@kolinalabs/api-pack-koa": "^1.0.0",
-    "@kolinalabs/api-pack-mongoose": "^1.0.8",
-    "@kolinalabs/nodejs-api-pack": "^1.0.3",
+    "@kolinalabs/api-pack-mongoose": "^1.1.2",
+    "@kolinalabs/nodejs-api-pack": "^1.0.4",
     "body-parser": "^1.19.0",
     "dotenv": "^8.0.0",
     "express": "^4.16.4",

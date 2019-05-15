@@ -16,8 +16,23 @@ const router = require("@kolinalabs/api-pack-express");
 const { Project, Task } = require("./models/mongoose");
 const models = [Project, Task];
 
-// GET ROUTES
+// INIT API PACK
 const apiPack = new ApiPack(models);
+
+// ADD CUSTOM EXTENSION
+const CustomExtension = {
+  name: "CustomExtension",
+  supports: "item:put",
+  apply(query, operation) {
+    // Increment your query here
+    // e.g.: query.where('property', 'value')
+    // console.log("Supports for " + this.supports);
+  }
+};
+
+apiPack.addExtension(CustomExtension);
+
+// GET ROUTES
 const routes = apiPack.routing(router);
 
 // INIT APP

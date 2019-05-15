@@ -20,7 +20,7 @@ schema.statics.ApiPack = function() {
       }
     },
     pagination: {
-      enabled: false,
+      // enabled: false,
       // clientEnabled: true,
       // enabledParameter: "pager",
       itemsPerPage: 5
